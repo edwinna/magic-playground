@@ -1,0 +1,141 @@
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td,section,article,aside,header,footer,nav,dialog,figure,hgroup{margin:0;padding:0;}
+input,select,textarea{font-size:100%;-webkit-appearance:none;outline:none;border:none;}
+table {border-collapse:collapse;border-spacing:0}
+fieldset,img {border:0;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:500;}
+ul,ol,li{list-style:none}
+em,i{font-style:normal}
+del{text-decoration:line-through;}
+address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:500;}
+img{border:0;max-width:100%;}
+img{vertical-align:middle;}
+input:focus,a:focus{outline:none;}
+a{color:#353d44;text-decoration:none;}
+a:active{opacity:.7;}
+*{outline:none;-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-box-sizing:border-box;}
+html{-webkit-text-size-adjust:none;overflow-y:scroll;}
+
+/* Site Global */
+body{min-width:320px;line-height:1.5;color:#353d44;font-family:Arial, Helvetica, STHeiTi, sans-serif;background:#F2F2F2;}
+.w{margin:0 auto;max-width:15rem;}
+.layout{margin:.2rem;-webkit-box-sizing:border-box;}
+.pdlayout{padding:.2rem .6rem;}
+.fix:after{display:block; content:''; clear:both; visibility:hidden;}
+.cl{clear:both;}
+.fl{float:left}
+.fr{float:right;}
+.block{display:block;}
+.dib{display:inline-block;}
+.dt{display:table;}
+.dtc{display:table-cell;}
+.hide{display:none}
+.mt20{margin-top:.4rem !important;}
+.mt10{margin-top:.2rem !important;}
+.mt30{margin-top:.6rem !important;}
+.mt45{margin-top:.9rem !important;}
+.mt50{margin-top:1rem !important;}
+.mb50{margin-bottom:1rem !important;}
+.mb20{margin-bottom:.4rem !important;}
+.mb10{margin-bottom:.2rem !important;}
+.fhalf{font-size:.4rem;}
+.scale{-webkit-transform:scale(.8);}
+.font{font-size:.58rem;}
+.f12{font-size:.24rem;}
+.f15{font-size:.3rem;}
+.f18{font-size:.36rem;}
+.f24{font-size:.48rem;}
+.f26{font-size:.52rem;}
+.f28{font-size:.56rem;}
+.f30{font-size:.6rem;}
+.f32{font-size:.64rem;}
+.f34{font-size:.68rem;}
+.f36{font-size:.72rem;}
+.f40{font-size:.8rem;}
+.f56{font-size:1.12rem;}
+.tr{text-align:right;}
+.tc{text-align:center;}
+.pa{position:absolute;}
+.pr{position:relative;}
+.gray6{color:#666;}
+.gray9{color:#999;}
+.vm{position:absolute;top:50%;-webkit-transform:translateY(-50%);}
+.hm{position:absolute;left:50%;-webkit-transform:translateX(-50%);}
+.bold{font-weight:700;}
+.of{overflow:hidden;word-wrap:break-word;word-break:break-all;white-space:nowrap;text-overflow:ellipsis;}
+.wb{word-wrap:break-word;word-break:break-all;text-overflow:ellipsis;}
+img.liprice{height:20px !important;width:auto !important;}
+.p{margin:5px 0;}
+.overtouch{overflow-y:auto;-webkit-overflow-scrolling:touch;}
+.input-reset{-webkit-appearance:none;-webkit-border-radius:0;}
+.dt{display:table;}
+.dtc{display:table-cell;}
+.border-tb{border-top:1px solid #DCDCDC;border-bottom:1px solid #DCDCDC;}
+.border-b1{border-bottom:1px solid #dcdcdc;}
+.bnone{border:none;}
+/* layout */
+.wbox{display:-webkit-flex !important;display:-webkit-box;}
+.wbox-flex{-webkit-flex:1 !important;-webkit-box-flex:1;word-wrap:break-word;word-break:break-all;}
+.bbox,p,div{-webkit-box-sizing:border-box;}
+.overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.6);z-index:101;}
+.lazyimg img,.lazybox{background:#fff url(data:image/png;charset=utf-8;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAAAdCAMAAAAdK4vkAAAAAG5wVGOkIJ/OAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAA/UExURQAAAPf39/b29vn5+f////////39/ebm5vLy8urq6vDw8P39/f///+vr6////+rq6dvb29bW1v///+Hh4fDw7yUnHAEAAAAPdFJOUwCMoHw8KlH+t+3NZwzfGdofFLUAAAOtSURBVEjHtVaJcus2DORNgpfAQP//rV0esp20melM++BEEiV5CS52QSv1jtBuq/5IlCvGy/wJ5HDHC/E/Y9vWcr5OUG5k+utZT2W9kt63wvvaW73DrltOa696tt0/yGAixgd6DfLBbRQHU2vEI1KuyiWied2IdAWHMnjHuIBWeAwJAQehsADyG/aJ223oiyXiwzIPl/KYSOYtER5ZdeFUdqTRlBe2dsSA6WXIQmjXb9Cq1qpCtqp6711XZjTnV/Qi7AILVtQIa7CZfRgmhMTF4phHWln/A/Qhy5cSkFA4w8zlxXjmAOi2Y0EXNkKJ8UlDC/1GyIO1uRwMKucCUnBP2FRBiPkgxLJplDe0XdDh/nvWjwZDNgbf1wQmKKt0igbC8V8+yxjdC1pS4pU1nLKF8ejjE9tfJnCsqtIwLDW0tIIGpZQdCidmxxTfT+hw0sS8+8yf2HYYvQqCY5RHrRjpc+aWpyko676h0xv6EH1DW1+Im/nhZIoEpOFvzZGI3Rt6TVwjT5lFpDW1iDwAPV7Q9Krh14o38WF9d4psQzcOP6DLaD2P4EAZNO0dGZGUDSezFKIPkNwb+uvhvE3jcrOTagVFm/yGTpuQNsqENXOitbg2wF4ASVsh6cjt615x0o5Lfvqh2sUBfT2ixkrWLMVWIHbGCHUOWAVFXBMmCDzFlw4b9/TvfTjZwoaO8yg1N56ynez73Obo9Bgsiz246kkGoGQEcKQ6FNNWRpVmzpvnh+7H6OgakBw0/DS7slRt6kM6J0XTlkwezzAjrQVBnf4Y/SH6oft+6czDhs69umidRvxouQ7d0OHkz2Af5rfUaU/foD+z/i3qv3vWru/Y785XNcWoPaH1ZQMrSrRwr8PWIQ1v6Ch5MeXhJ6Mshl6lHFvJh0ETp83vE9Pq8a5Hv1fKNqAknpvBpiBomdNFkVi6ZaLVl52MGKEluLwFGdds6bvSnoD72mOuG6PwWCOiWTvUqkvWrHFpNJcEFxnGipRa7jdT01VwCbVGeGWEyvHUyjm/9R3J+Y86lRSnayZ00zxnMRbQEwRehqtoQqepii7Sp2nhNY2xxA/20zWZ6N92eR00A0MCnGPHzhrmYY9M4SFrWVwyhcUWOEAHbGGyslYsn0AG2/k3ZAVQtE2c0A99EUCLsbKzllBpbpRFqM4Xkm/YQm0HIVaCivQNybmfmvJh7V04dUga87pe0abdFHiFhkOUPjW83qvr5WUEqN3/l58vWtAN0x/5JRem6H/3zl8OVklIy0odWAAAAABJRU5ErkJggg==) center no-repeat;}
+
+/* 
+  rem方式，750px 为高保真基准，原高保真大小除以基数50，即 10px/50 = 0.2rem，以此类推,字体还是 px
+ */
+
+html{font-size:50px;}
+body{font-size:24px;}
+@media screen and (min-width:320px){
+  html{font-size:21.333333333333332px;}
+  body{font-size:12px;}
+}
+@media screen and (min-width:360px){
+  html{font-size:24px;}
+  body{font-size:12px;}
+}
+@media screen and (min-width:375px){
+  html{font-size:25px;}
+  body{font-size:12px;}
+}
+@media screen and (min-width:384px){
+html{font-size:25.6px;}
+body{font-size:14px;}
+}
+@media screen and (min-width:400px){
+html{font-size:26.666666666666668px;}
+body{font-size:14px;}
+}
+@media screen and (min-width:414px){
+html{font-size:27.6px;}
+body{font-size:14px;}
+}
+@media screen and (min-width:424px){
+html{font-size:28.266666666666667px;}
+body{font-size:14px;}
+}
+@media screen and (min-width:480px){
+html{font-size:32px;}
+body{font-size:15.36px;}
+}
+@media screen and (min-width:540px){
+html{font-size:36px;}
+body{font-size:17.28px;}
+}
+@media screen and (min-width:720px){
+html{font-size:48px;}
+body{font-size:23.04px;}
+}
+@media screen and (min-width:750px){
+html{font-size:50px;}
+body{font-size:24px;}
+}
+
+/** common tool **/
+.sy-checkbox{width:.72rem;height:.72rem;border-radius:.1rem;border:1px solid #DCDCDC;}
+.sy-checkbox:checked{background-color:#D4145A;background:#D4145A url(data:image/png;charset=utf-8;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAARBAMAAAA4SAFEAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAkUExURQAAAP///////////////////////////////////////////7QJjekAAAAMdFJOUwD+jrvwDD1UbCga4AzsdzgAAAB8SURBVBjTY2BABpwKKFyGEnEULpOgKTKX1VCCgYE9AM6fLZLAwKAIV8LuaAUkVwvD+IpCIKWcjlA7Fgs2gOkUITDFtnEbRJwNIt4ovACqrxDkiCBBuNM4BBMYuAzdEe5QdGNIkZ6A5EyRGagONXQUQvFHsEgBCp9VE84EABN5EA+ig9/6AAAAAElFTkSuQmCC) no-repeat center;background-size:80%;}
+
+
+
+
